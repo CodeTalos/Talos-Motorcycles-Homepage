@@ -1,0 +1,287 @@
+/* Universal styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+html {
+  height: fit-content;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-text {
+  padding: 0;
+}
+
+
+main {
+  padding-top: 5rem;
+}
+
+
+/* Header */
+
+header {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  background-color: black;
+  position: fixed;
+}
+
+.header-content {
+  margin: 0 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 2rem;
+  color: white;
+}
+
+.mobile-nav {
+  height: 3rem;
+  width: 3.5rem;
+  display: none;
+}
+
+nav a:hover {
+  color: rgb(81, 73, 162);
+}
+
+.company-logo {
+  font-style: italic;
+  color: rgb(81, 73, 162);
+}
+
+/* Banner */
+
+.banner {
+  background-image: url(./images/superbike-banner.jpg);
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description-box {
+  border: 1px solid black;
+  width: 25rem;
+  height: 15rem;
+  margin-left: 7rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Motorcycle */
+
+
+
+.motorcycle-type {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 25rem;
+  height: 20rem;
+  margin: 0.15rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.motorcycle-type h3 {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  color: white;
+  width: 100%;
+  padding: 2rem;
+  margin: 0; 
+}
+
+.motorcycle-type:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+  background-blend-mode: overlay;
+}
+
+#supersport {
+  background-image: url("./images/supersport.jpg");
+}
+
+#streetsport {
+  background-image: url("./images/streetsport.jpg");
+}
+
+#sport-touring {
+  background-image: url("./images/sport-touring.png");
+}
+
+#cruiser {
+  background-image: url("./images/cruiser1.jpg");
+}
+
+/* Team */
+
+.content-box-team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team {
+  max-width: 81.5rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 20rem;
+  margin: 0.15rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.team-member-text {
+  color: white;
+  padding: 0;
+  background-color: rgba(220, 220, 220, 0.2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.team-member-text h3 {
+  padding: 0.5rem 0rem 0.1rem 1rem;
+  margin: 0;
+}
+
+.team-member-text h4 {
+  padding: 0rem 0rem 0.5rem 1rem;
+  margin: 0;
+}
+
+#ceo {
+  background-image: url("./images/team/CEO.jpg");
+}
+
+#saleman {
+  background-image: url("./images/team/sales-advisor.jpg");
+}
+
+#accountant {
+  background-image: url("./images/team/accountant.png");
+}
+
+#web-developer {
+  background-image: url("./images/team/KK\ web\ developer.jpg");
+}
+
+/* Contacts */
+
+#contact-map {
+  background-image: url("./images/Talosmotorcycles-map.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacts-items {
+  width: 20rem;
+  height: 20rem;
+  margin: 3rem 1.5rem 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contacts-items h2, p {
+  margin: 0.25rem ;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+
+/* mobile screen */
+
+@media only screen and (max-width: 720px) {
+  .nav-items {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .team {
+    max-width: 100%;
+  }
+
+  .team-member {
+    flex-grow: 1;
+  }
+
+
+  body {
+    min-width: 375px;
+  }
+
+  .description-box {
+    border: 1px solid black;
+    width: 340px;
+    height: 18rem;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+
+  .banner {
+    align-items: center;
+  }
+
+  .header-content {
+    margin: 0 0.5rem;
+  }
+
+  .contacts-items {
+    margin: 0rem 0rem 1rem 0rem;
+  }
+}
